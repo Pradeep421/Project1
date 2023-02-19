@@ -1,0 +1,140 @@
+/* universal selector used to remove all default value */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Red Rose",sans-serif;
+}
+
+/* add background image to the web page */
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./Assets/pexels-maxyne-barcel-10402282 1.png');
+    background-size: cover;
+    background-attachment: fixed;  
+
+}
+ /* ------------------------------------------------styling the nav bar -----------------------------------------------------------------*/
+
+ /* nav bar overall */
+nav 
+{
+display: flex;
+align-items:center;
+justify-content: space-between;
+height: 15vh;
+padding: 40px;
+}
+/* nav bar logo with modifiication */
+.logo{width: 100px;}
+
+/* styling the list in navbar */
+nav ul {
+    list-style: none;
+    display: flex;    
+    gap:30px;      
+   
+}
+
+/* styling the anchor tag in the navbar */
+a{
+    
+    text-decoration:none; 
+    font-weight: bold; 
+    font-style: normal;
+    color: #ffc233;      
+    
+}
+/* styling the button in navbar */
+
+button
+{padding:7px 20px;
+color:#fff;
+background-color: rgb(222, 72, 72);
+font-weight: bold;
+border: none;}
+
+button:hover{
+    background-color: #fff;
+    color:rgb(222, 72, 72);
+    font-weight: bold;
+    font-size:15px ;
+    
+}
+/* -----------------------------------styling the main section of the page--------------------------------------------------------  */
+section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+/* -----------------------------------------styling the content inside the main section ---------------------------------------*/
+section div h1{
+    color: #ffc233; 
+    font-size: 50px;
+    /* font-style: normal;     */
+    font-weight: 100;
+    font-family: "Dela Gothic One", cursive;
+    line-height: 70px;
+    word-spacing: 20px;
+    margin-top: 55px;
+    
+}
+/* ----------------------------------styling the button of the main section---------------------------------------------------- */
+section button{
+    margin-top:50px ;
+    padding: 15px 50px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+/* hover action on the button */
+section button:hover{
+    background-color: #fff;
+    color:rgb(222, 72, 72);
+    font-weight: bold;
+    font-size:25px ;
+    transition: 3s;
+}
+/* @keyframes anime {
+   from{ background-color: #fff;
+    color:rgb(222, 72, 72);
+    font-weight: bold;
+    font-size:25px ;}
+    
+} */
+/* scroll image  */
+
+.Scroll-image
+{
+
+position:fixed;
+right: 80px;
+bottom: 30px;
+}
+.Scroll{
+    height: 100%;
+    width: 100%;
+}
+
+/* media qurey */
+
+@media (max-width: 800px)
+{
+    section{
+        display: none;
+        
+    }
+    header::after{        
+        content: "This page is best viewed at laptop";
+        font-size: 100px;
+        color: red;
+        
+        }
+    
+}
